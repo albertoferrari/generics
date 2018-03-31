@@ -1,0 +1,30 @@
+import java.awt.Color;
+import java.io.PrintStream;
+
+public class Main
+{
+
+    public Main()
+    {
+    }
+
+    public static void main(String args[])
+    {
+        GetMinGeneric gmg = new GetMinGeneric();
+        Double d[] = {
+            Double.valueOf(3.3999999999999999D), Double.valueOf(2.8999999999999999D), Double.valueOf(11D)
+        };
+        Integer i[] = {
+            Integer.valueOf(2), Integer.valueOf(10), Integer.valueOf(-3)
+        };
+        Character c[] = {
+            Character.valueOf('b'), Character.valueOf('a'), Character.valueOf('z')
+        };
+        Color col[] = {
+            Color.RED, Color.GREEN, Color.BLUE
+        };
+        System.out.println((new StringBuilder("Min (double): ")).append(gmg.min(d[0], d[1], d[2])).toString());
+        System.out.println((new StringBuilder("Min (int): ")).append(gmg.min(i[0], i[1], i[2])).toString());
+        System.out.println((new StringBuilder("Min (char): ")).append(gmg.min(c[0], c[1], c[2])).toString());
+    }
+}

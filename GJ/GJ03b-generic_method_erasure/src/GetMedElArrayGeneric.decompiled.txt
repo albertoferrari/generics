@@ -1,0 +1,15 @@
+public class .ArrayUtil
+{
+
+    public .ArrayUtil()
+    {
+    }
+
+    public Object medEl(Object a[])
+    {
+        if(a == null || a.length == 0)
+            return null;
+        else
+            return a[a.length / 2];
+    }
+}

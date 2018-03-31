@@ -1,0 +1,40 @@
+import java.awt.Color;
+import java.io.PrintStream;
+
+public class Main
+{
+
+    public Main()
+    {
+    }
+
+    public static void main(String args[])
+    {
+        .ArrayUtil gmg = new .ArrayUtil();
+        Double d[] = {
+            Double.valueOf(3.3999999999999999D), Double.valueOf(2.8999999999999999D), Double.valueOf(11D)
+        };
+        Integer i[] = {
+            Integer.valueOf(2), Integer.valueOf(10), Integer.valueOf(-3)
+        };
+        Character c[] = {
+            Character.valueOf('b'), Character.valueOf('a'), Character.valueOf('z')
+        };
+        String s[] = {
+            "aldo", "giovanni", "giacomo"
+        };
+        Color col[] = {
+            Color.RED, Color.GREEN, Color.BLUE
+        };
+        Double dMed = (Double)gmg.medEl(d);
+        Integer iMed = (Integer)gmg.medEl(i);
+        char cMed = ((Character)gmg.medEl(c)).charValue();
+        String sMed = (String)gmg.medEl(s);
+        Color colMed = (Color)gmg.medEl(col);
+        System.out.println((new StringBuilder("Array (double): ")).append(dMed).toString());
+        System.out.println((new StringBuilder("Array (int): ")).append(iMed).toString());
+        System.out.println((new StringBuilder("Array (char): ")).append(cMed).toString());
+        System.out.println((new StringBuilder("Array (string): ")).append(sMed).toString());
+        System.out.println((new StringBuilder("Array (color): ")).append(colMed).toString());
+    }
+}
